@@ -2,9 +2,6 @@ language: ruby
 rvm:
 - 2.2
 cache: bundler
-before_script:
-- cd vendor && npm install
-- cd ../
 script:
 - bundle exec middleman build -e production
 deploy:
