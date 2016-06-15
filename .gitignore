@@ -18,5 +18,6 @@
 .DS_Store
 
 # ignore vendored assets
+/vendor/bundle
 /vendor/assets
 /vendor/node_modules
