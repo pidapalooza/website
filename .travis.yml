@@ -12,8 +12,9 @@ deploy:
   bucket: www.pidapalooza.org
   local-dir: build
   skip_cleanup: true
-  acl: public_read
+  region: eu-west-1
+  detect_encoding: true
   on:
-    repo: pidapalooza/website
+    all_branches: true
 notifications:
   slack: datacite:Wt8En0ALoTA6Kjc5EOKNDWxN
