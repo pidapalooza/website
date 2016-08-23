@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.2
+- 2.3.1
 cache: bundler
 script:
 - bundle exec middleman build -e production
@@ -17,3 +17,4 @@ deploy:
     all_branches: true
 notifications:
   slack: datacite:Wt8En0ALoTA6Kjc5EOKNDWxN
+  email: false
