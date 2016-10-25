@@ -673,7 +673,7 @@ title: PIDapalooza
 
     <div class="col-md-3">
       <div class="thumbnail">
-        <a href="#--"><img src="images/speakers/daniel_goroff.jpg" alt="dg"></a>
+        <a href="#101"><img src="images/speakers/daniel_goroff.jpg" alt="dg"></a>
         <div class="caption">
           <h3>Daniel Goroff</h3>
         </div>
@@ -760,7 +760,7 @@ title: PIDapalooza
 
     <div class="col-md-3">
       <div class="thumbnail">
-        <a href="#8"><img src="images/speakers/mieneke_van_der_salm.jpg" alt="mvds"></a>
+        <a href="#100"><img src="images/speakers/mieneke_van_der_salm.jpg" alt="mvds"></a>
         <div class="caption">
           <h3>Mieneke van der Salm</h3>
         </div>
@@ -905,6 +905,16 @@ title: PIDapalooza
   </div>
   <div class="row text-center">
 
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="#102"><img src="images/speakers/missing.jpg" alt=""></a>
+        <div class="caption">
+          <h3>Tim Clark</h3>
+        </div>
+      </div>
+    </div>
+
+
   <div class="col-md-3">
       <div class="thumbnail">
         <a href="#16"><img src="images/speakers/tom_gillespie.jpg" alt="tg"></a>
@@ -931,6 +941,10 @@ title: PIDapalooza
         </div>
       </div>
     </div>
+
+
+  </div>
+  <div class="row text-center">
 
     <div class="col-md-3">
       <div class="thumbnail">
@@ -959,14 +973,17 @@ title: PIDapalooza
 				<h3 id="1">PIDvasive - what’s possible when everything has a persistent identifier?</h3>
 				<h4>Jonathan Clark - International DOI Foundation</h4>
 				<p>
-Day 1 Plenary Session: A look into a future where objects roam freely, where they self-describe and where they interact automagically with each other. A future where we always know what’s what and who’s who.  Maybe, just maybe this future is closer than we might think.
+Day 1 Plenary Session: Knowing what’s what and who’s is an old problem. Thankfully we have made huge progress and many communities have now understood and agreed persistent identifier standards. But what would a future look like if everything has an identifier? How will I know that I can trust the information? How can I know how persistent an identifier really is? And what about the object it describes, how persistent is that? What if that object is physical and not digital? How will my machine know all this? What if digital objects can roam freely, and can self-describe and interact automagically? 
+<p></p>
+This session on the future will attempt to predict the unpredictable and imagine the unimaginable. And maybe, just maybe we might discover that this future is closer than we might think.
+
 				</p>
 
 				<hr class="primary">
 				<h3 id="2">Exploring the relationship between persistent identifiers and research information citizenship</h3>
 				<h4>Simon Porter - Digital Science</h4>
 				<p>
-Day 1 Plenary Session: To attach a persistent identifier to a representation of a person, organisation  or research object is to provide that representation a way to travel across research systems and organizational boundaries. The background infrastructure required for this to happen is as much social as it is technical.  This presentation will attempt to unpack the social element of this infrastructure through the concept of research information citizenship. As research information citizens, what are our obligations to the research data that we consume, create and communicate? Particular focus will be on unpacking the use of ORCID and GRID identifiers in terms of trust, roles and responsibilities within the research community.
+Day 1 Plenary Session: To attach a persistent identifier to a representation of a person, Organisation  or research object is to provide that representation a way to travel across research systems and Organizational boundaries. The background infrastructure required for this to happen is as much social as it is technical.  This presentation will attempt to unpack the social element of this infrastructure through the concept of research information citizenship. As research information citizens, what are our obligations to the research data that we consume, create and communicate? Particular focus will be on unpacking the use of ORCID and GRID identifiers in terms of trust, roles and responsibilities within the research community.
 				</p>
 
 				<hr class="primary">
@@ -982,7 +999,7 @@ The increased adoption of PIDs in the academic enterprise coincides with increas
 				<h4>Herbert Van de Sompel - Los Alamos National Laboratory</h4>
 				<p>
 Day 2 Plenary Session:
-PIDs need to be used to achieve their intended persistence. Our research (reported at WWW2016, see <a href="http://arxiv.org/1602.09102">http://arxiv.org/1602.09102</a>) found that a disturbing percentage of references to papers that have DOIs actually use the landing page HTTP URI instead of the DOI HTTP URI. The problem is likely related to tools used for collecting references such as bookmarks and reference managers. These select the landing page URI instead of the DOI URI because the former is what's available in the address bar.  It can safely be assumed that the same problem exists for other types of PIDs. The net result is that the true potential of PIDs is not realized.  In order to ameliorate this problem we propose a Signposting pattern for PIDs (<a href="http://signposting.org/identifier/">http://signposting.org/identifier/</a>). It consists of adding a Link header to HTTP HEAD/GET responses for all resources identified by a DOI, including the landing page and content resources such as "the PDF" and "the dataset". The Link header contains a link, which points with the "identifier" relation type to the DOI HTTP URI. When such a link is available, tools can automatically discover and use the DOI URI instead of the other URIs (landing page, PDF, dataset) associated with the DOI-identified object.
+PIDs need to be used to achieve their intended persistence. Our research found that a disturbing percentage of references to papers that have DOIs actually use the landing page HTTP URI instead of the DOI HTTP URI. It can safely be assumed that the same problem exists for other types of PIDs. The net result is that the true potential of PIDs is not realized. In order to ameliorate this problem we propose to convey the PID in the HTTP Link response header of all resources identified by the PID, including the landing page and content resources such as "the PDF" and "the dataset". This allows tools, such as citation managers, to auto-discover and use the PID. Similarly, the HTTP Link header can be used to allow tools to auto-discover, from the landing page, which resources are part of a PID-identified object. These and other uses of the HTTP Link header to achieve a coarse yet meaningful level of interoperability in the scholarly communication system are promoted by the “Signposting the Scholarly Web” effort, <a href="http://signposting.org">http://signposting.org</a>.
 				</p>
 
 				<hr class="primary">
@@ -1003,11 +1020,21 @@ After crowd surfing through two days of acts, I will present PIDapalooza's "Grea
 				<h4>Susan White-DePace, Michael Hofmockel</h4>
 				<p>The Society for Science at User Research Facilities (SSURF) is a non-profit organization representing scientific user facilities across the United States and abroad. SSURF seeks to help steward the resolution of our technical challenges, security concerns, conflicting policies and identity management challenges that currently blocks us from working together. The resolution of these blockers will clear the way for these research facilities to do more by sharing in the creation of the many common wheels they all need. A comprehensive robust open Identity management system is the root of the matter.
 				</p>
+				
+				<hr class="primary">
+				<h3 id="100">From DAI to ORCID: Implementation and beyond in Leiden</h3>
+				<h4>Mieneke van der Salm</h4>
+				<p>
+In the Netherlands, there is a relatively long history of working with author identifiers. Since 2008, virtually all researchers affiliated with a Dutch university have been assigned a so-called DAI, a Digital Author Identifier. As the DAI system was custom-built for a Dutch situation, many universities in the Netherlands are currently in the process of implementing the more international ORCID system. With the aid of SURF, five Dutch universities have collectively become members of the ORCID organisation through a national consortium. 
+</p>	<p>
+At Leiden University, one of the institutions in this consortium, the implementation of the ORCID system is a central activity within a much broader programme which will ultimately lead to the ability to present the scholarly output of all of our researchers in a broader context. When publications, data sets, funding programmes and researchers can all be identified unambiguously via PIDs, it becomes possible to visualise the many connections that exist between these objects and these people, and to provide a more complete and more coherent overview of the results of research projects.
+				
 
 	      <hr class="primary" />
 	      <h3 id="35">Identifiers on the rise in Germany</h3>
 				<h4>Paul Vierkant</h4>
-				<p>Identifiers on the rise in Germany shall treat the current development of identifiers in Germany's research landscape. Introducing ORCID in Germany's Universities and research organizations finds a lot of interest and a quick uptake. The talks illustrates also the challenges for personal identifiers taking especially German history into account. Within the talk I will present the latest results from a study on the usage and spread of ORCID in academic institutions in Germany in the course of the <a href="http://www.orcid-de.org">ORCID DE project</a>. The presentation will also touch upon the discussion about of the recently presented "Kerndatensatz Forschung" (<a href="http://www.forschungsinfo.de/kerndatensatz/en/index.php?home">Research Core Dataset</a>) recommended by the German Council of Science and Humanities aiming to gather coherent information about research activities also using authority files such as ORCID, DOI and organization identifiers.
+				<p>
+					Identifiers on the rise in Germany shall treat the current development of identifiers in Germany's research landscape. Introducing ORCID in Germany's Universities and research organizations finds a lot of interest and a quick uptake. The talks illustrates also the challenges for personal identifiers taking especially German history into account. Within the talk I will present the latest results from a study on the usage and spread of ORCID in academic institutions in Germany in the course of the <a href="http://www.orcid-de.org">ORCID DE project</a>. The presentation will also touch upon the discussion about of the recently presented ""Kerndatensatz Forschung"" (Research Core Dataset) recommended by the German Council of Science and Humanities aiming to gather coherent information about research activities also using authority files such as ORCID, DOI and organization identifiers (<a href="http://www.forschungsinfo.de/kerndatensatz/en/index.php?home">http://www.forschungsinfo.de/kerndatensatz/en/index.php?home</a>). 
 				</p>
 
 				<hr class="primary">
@@ -1015,16 +1042,6 @@ After crowd surfing through two days of acts, I will present PIDapalooza's "Grea
 			      <h3 id="5">Tales from the PID Adoption Frontier</h3>
 				<h4>Richard Wynne</h4>
 				<p>One of the services performed by Scholarly journal publishers is to transform unstructured author manuscripts (usually prepared in Word format) into structured content with valid PIDs. How does this happen? The Editorial Manager submission system contains more than a million author records with validated ORCIDs and supports emerging standards such as CRediT and Open Funder Registry. This presentation tells the story of real world technical and operational challenges associated with collecting and using PIDs. We’ll explore the good, the bad and the ugly and talk about new frontiers.
-				</p>
-
-				<hr class="primary">
-				<h3 id="6">da|ra: PIDs for Social Sciences</h3>
-				<h4>Brigitte Hausstein</h4>
-				<p>
-					GESIS Leibniz Institute for the Social Sciences is offering a wide range of services to social science researchers. Together with the Leibniz Information Center for Economics (ZBW) GESIS operates the non-commercial data registration agency <a href="http://www.da-ra.de/en/home/">da|ra</a>. By using the DOI System, da|ra makes primary data generated in the Social Sciences and the Economics permanently identifiable and available. The service has been provided since 2011 and it is based on the DataCite membership of GESIS and ZBW.
-				</p>
-				<p>
-					Although there is a great majority of Social Scientists and Economists that have been producing and analyzing quantitative data for a long time, it has been a great challenge to convince researchers and data providers about the advantages of PIDs in general and DOI in particular. Social science data centers are often small and run by researchers themselves. That is why da|ra is offering a complete infrastructure for DOI registration and metadata administration that meets their special needs. In our paper we would like to tell the success story of da|ra from the very (painful) beginning to today, when da|ra is a well-accepted DOI service provider for social and economic data.
 				</p>
 
 				<hr class="primary">
@@ -1089,8 +1106,7 @@ As data are made more freely available and discoverable on the Web, it is likely
 				<hr class="primary">
 				<h3 id="15">Public key cryptography</h3>
 				<h4>Max Ogden</h4>
-				<p>Using content addressability and public key cryptography in identifiers. In the Dat project we want to be able to use identifiers to find duplicate copies of datasets around the world to increase download speeds. By taking the hash of the content of the data, and signing it with the public key of the user who published it, and using these as the basis for our dataset identifiers, we are able to verify identity of authorship as well as integrity of data. In this talk we will discuss the pros and cons of our identifier scheme, how we hope to standardize them, and what centralized vs decentralized infrastructure is required to make a system like this usable to the average user.
-
+				<p>In the Dat project we want to be able to use identifiers to find duplicate copies of datasets around the world to increase download speeds. By taking the hash of the content of the data, and signing it with the public key of the user who published it, and using these as the basis for our dataset identifiers, we are able to verify identity of authorship as well as integrity of data. In this talk we will discuss the pros and cons of our identifier scheme, how we hope to standardize them, and what centralized vs decentralized infrastructure is required to make a system like this usable to the average user.
 				</p>
 
 				<hr class="primary">
@@ -1115,7 +1131,7 @@ As data are made more freely available and discoverable on the Web, it is likely
 				<hr class="primary">
 				<h3 id="18">Utilization of ORCIDs</h3>
 				<h4>Trisha Adamus</h4>
-				<p>The School of Nursing at the University of Wisconsin-Madison is under the direction of exceptional researchers focused on advancement of research in the field of Nursing and as such have always been proponents of innovations in research. The School of Nursing, together with Ebling library liaison Mary Hitchcock and ORCID Ambassador Trisha Adamus, has embarked on an awareness and instructional campaign to create and utilize ORCID identifiers. The first step in the campaign is a pilot, which will include the development and implementation of promotional materials, hands on instructional sessions and pilot assessment. The pilot will be used to inform campaign expansion for the entire School of Nursing and subsequently the University of Wisconsin-Madison. This session will focus on the evolution of the ORCID campaign on the University of Wisconsin-Madison campus and share the lessons learned during the School of Nursing pilot.
+				<p>This session will focus on the evolution of the ORCID campaign on the University of Wisconsin-Madison campus and share the lessons learned during a pilot project with the School of Nursing. This ongoing pilot project includes the development and implementation of promotional materials, hands on instructional sessions and pilot assessment. The pilot will be used to inform campaign expansion for the entire School of Nursing and subsequently the University of Wisconsin-Madison. 
 				</p>
 
 				<hr class="primary">
@@ -1194,7 +1210,7 @@ PrefixCommons is a cross-cutting framework to aggregate, document, and harmonize
 				<hr class="primary">
 				<h3 id="26">Publications and ORCIDs</h3>
 				<h4>Ted Lawless</h4>
-				<p>Over six million publications in the Web of Science are related to at least one author identified with an ORCID and more are added each month. Existing APIs allow customers to query the Web of Science and integrate data about affiliated researchers into their systems. How can this ORCID integration be leveraged? What are the next steps in utilizing identifiers to make connections across systems?
+				<p>Over six million publications in the Web of Science are related to at least one author identified with an ORCID and more are added each month. Existing APIs allow customers to query the Web of Science and integrate data about affiliated researchers into their systems. How can this ORCID integration be leveraged? What are the next steps in utilizing identifiers to make connections across systems? Examples of potential data reuse will be presented and discussed.
 				</p>
 
 				<hr class="primary">
@@ -1216,6 +1232,13 @@ support for open access publication fees</h3>
 				<p>Wikidata as an interoperability solution. Wikidata is the structured database solution (now about 4 years old) from the WikiMedia Foundation and is already the central source for linking articles across the many different language-specific wikipedia's. Wikidata allows additional structured data, including a wide variety of external identifiers, to be attached to entities. As a free, open, standards-based (RDF and SPARQL supported), and universally editable database, Wikidata may provide an ideal solution for interlinking and providing an interoperable interface for at least some persistent identifiers.
 				</p>
 
+				<hr class="primary">
+				<h3 id="102">Assign locally, resolve globally: prefix-based collection access </h3>
+				<h4>Tim Clark</h4>
+				<p>This talk will discuss a joint project of the California Digital Library and the European Bioinformatics Institute, with other collaborators, to develop a common approach for global resolution of locally-assigned accession numbers, based on a shared registry of defined resource prefixes and provider codes. We believe our approach will enable academic publishers to implement the Joint Declaration of Data Citation Principles (JDDCP) more rapidly, easily and effectively for data in key bioinformatics resources.
+				</p>
+
+
 
 				<hr class="primary">
 				<h3 id="28">What do we mean</h3>
@@ -1232,7 +1255,7 @@ support for open access publication fees</h3>
 				<hr class="primary">
 				<h3 id="30">Broken URLs</h3>
 				<h4>Xinjian Guo</h4>
-				<p>Broken URLs or outdated bookmarks often frustrate the exploration of digital files.  The Yale Persistent Linking Service (YPLS) allows for creation of permanent links or handles that can be resolved to target URLs via the Handle.Net Registry (HNR) run by the Corporation for National Research Initiatives (CNRI). Persistent links provide a mechanism for ensuring that links to digital assets will continue to resolve and provide access to digital content even if the location of the content and the underlying software change over time.  Persistent links or handles are generated based on Handle.Net registry standards by CNRI under the DONA Foundation. Yale University owns a set of three handle prefixes. The handle syntax is prefix/local-unique-identifier. YPLS supports two types of handles, one is based on a string of seven alphanumeric characters generated with NOID (Nice Opaque IDentifier) minter, for example 10079/sqv9sf1, and another type is semantically meaningful handles widely used by the libraries for online catalogs, for example 10079/bibid/161348. A web interface is developed for users to create, update, delete, or resolve a single handle or a batch of handles using an Excel file as input. The web service API allows any system on campus to automatically generate and manage handles. As of today over 14 million handles have been created, with an average growth speed of about 20 thousand new handles per month.
+				<p>"The Yale Persistent Linking Service (YPLS) allows for creation of permanent links or handles that can be resolved to target URLs via Handle.Net Registry (HNR) by CNRI under the DONA Foundation. Broken URLs or outdated bookmarks often make the exploration and discovery of digital data very frustrating. Persistent links provide a mechanism for ensuring that links to digital assets will continue to resolve and provide access to digital content even if the location of the content and the underlying software change over time. The handle syntax is prefix/local-unique-identifier which makes the handle globally unique as the prefix Yale has registered is unique. YPLS supports two types of handle formats, one is based on a string of several alphanumeric characters generated with NOID (Nice Opaque IDentifier) minter, for example 10079/sqv9sf1, another is the semantically meaningful handles widely used by the libraries for online catalogs and finding aids, for example 10079/bibid/161348. A web interface was developed for users to create, update, delete, or resolve a single handle or a batch of handles using an input file. The web service API allows any system on campus to generate and manage handles programmatically. 
 				</p>
 
 				<hr class="primary">
@@ -1254,8 +1277,18 @@ support for open access publication fees</h3>
 				<h3 id="37">JISC</h3>
 				<h4>Christopher Brown</h4>
 				<p>
-<a href="https://www.jisc.ac.uk/">Jisc</a> is the UK higher, further education and skills sectors’ not-for-profit organisation for digital services and solutions. We operate shared digital infrastructure and services, negotiate sector-wide deals with IT vendors and commercial publishers, and provide trusted advice and practical assistance for universities, colleges and learning providers. To help deliver value to the sector we have worked with organisations, such as ORCID and CASRAI, to improve research information management through the adoption of standards and a common approach to research interoperability. In 2014-15, as part of the Jisc-CASRAI pilot, work was undertaken by the Organisational Identifier working group to review selected organisational IDs (orgIDs), consider the use cases for orgIDs and to come up with a recommended solution that could be widely implemented. Following the publication of the <a href="http://repository.jisc.ac.uk/5853/">report</a>, Jisc has been reviewing its recommendations and having discussions with UK stakeholders and international partners on the requirements for an orgID. Although there are many technical issues to resolve with the adoption of an existing, or new, orgID, any solution will only gain traction when implemented by key stakeholders. Can we wait for a perfect solution or should we promote one that satisfies most requirements but can be improved? Are higher education institutions in the UK waiting for guidance from research funders before making a decision, while developing short-term solutions? Whatever is the best solution, it will only be adopted when key stakeholders have been persuaded to adopt it and integrate it with their existing systems. Establishing the benefits are key to selling any solution but to achieve a consensus requires community engagement. This session will highlight the work Jisc has undertaken to understand the benefits and the work engaging with stakeholders and the community.
+Following the publication of the report “<a href="http://repository.jisc.ac.uk/5853/">Review of selected organisational IDs and development of use cases for the Jisc CASRAI-UK Organisational Identifiers Working Group</a>”, Jisc has been reviewing its recommendations and engaging with UK stakeholders and international partners on the requirements for an orgID. Although there are many technical issues to resolve with the adoption of an existing, or new, orgID, any solution will only gain traction when implemented by key stakeholders. Can we wait for a perfect solution or should we promote one that satisfies most requirements but can be improved? Are higher education institutions in the UK waiting for guidance from research funders before making a decision, while developing short-term solutions? Whatever is the best solution, it will only be adopted when key stakeholders have been persuaded to adopt it and integrate it with their existing systems. Establishing the benefits are key to selling any solution, but to achieve a consensus requires community engagement. This session will highlight the work Jisc has undertaken to understand the benefits and the work engaging with stakeholders and the community.
 				</p>
+
+				<hr class="primary">
+				<h3 id="101">Identifying Legal Entities</h3>
+				<h4>Daniel Goroff</h4>
+				<p>The Global Legal Entity Identifier (LEI) System is designed to uniquely and unambiguously identify participants in financial transactions.  The ISO 17442 standard defines a set of attributes or legal entity reference data that are the most essential elements of identification.  The Common Data File format provides the specificity needed for implementation of the ISO standard. The reporting of LEI and legal entity reference data is conducted daily by LEI issuing organizations using the Common Data File format.
+ <p></p>
+The LEI code itself is neutral, with no embedded intelligence or country codes which would create unnecessary complexity for users.  Four key principles underlie the LEI:  1) It is a global standard; 2) A single, unique identifier is assigned to each legal entity; 3) It is supported by high data quality; and 4) The dataset is a public good, available free of charge to all users."
+				</p>
+
+
 
 				<hr class="primary">
 				<h3 id="38">GRID</h3>
