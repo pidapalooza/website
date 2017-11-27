@@ -28,6 +28,7 @@ a {
 
 a:hover,
 a:focus {
+	color: black;
 }
 
 h1,
