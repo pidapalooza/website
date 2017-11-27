@@ -20,7 +20,6 @@ hr.light {
 }
 
 a {
-    color: #FF5733;
 	font-weight: bold;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -29,7 +28,6 @@ a {
 
 a:hover,
 a:focus {
-    color: #FF5733;
 }
 
 h1,
