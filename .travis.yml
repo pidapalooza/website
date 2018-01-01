@@ -1,9 +1,13 @@
 language: ruby
 rvm:
-- 2.3.1
+  - 2.4.1
+sudo: required
 cache: bundler
+install:
+  - bundle install
+  - sudo pip install awscli
 script:
-- bundle exec middleman build -e production
+  - bundle exec middleman build -e production
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY
@@ -14,7 +18,7 @@ deploy:
   region: eu-west-1
   detect_encoding: true
   on:
-    all_branches: true
+    branch: master
 notifications:
   slack: datacite:Wt8En0ALoTA6Kjc5EOKNDWxN
   email: false
