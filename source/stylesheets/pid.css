@@ -11,7 +11,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #358BA9;
+    border-color: #048BA8;
     border-width: 3px;
 }
 
@@ -54,7 +54,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #358BA9;
+    background-color: #048BA8;
 }
 
 .bg-dark {
@@ -116,7 +116,7 @@ section {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #358BA9;
+        color: #048BA8;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -131,7 +131,7 @@ section {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #358BA9;
+        color: #048BA8;
     }
 }
 
@@ -194,9 +194,9 @@ header .header-content img {
 }
 
 .btn-primary {
-    border-color: #358BA9;
+    border-color: #048BA8;
     color: #fff;
-    background-color: #358BA9;
+    background-color: #048BA8;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -208,13 +208,13 @@ header .header-content img {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #358BA9;
+    border-color: #048BA8;
     color: #fff;
-    background-color: #358BA9;
+    background-color: #048BA8;
 }
 
 .btn-primary .badge {
-    color: #358BA9;
+    color: #048BA8;
     background-color: #fff;
 }
 
