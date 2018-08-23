@@ -11,7 +11,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #FF5733;
+    border-color: #358BA9;
     border-width: 3px;
 }
 
@@ -54,7 +54,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #FF5733;
+    background-color: #358BA9;
 }
 
 .bg-dark {
@@ -116,7 +116,7 @@ section {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #FF5733;
+        color: #358BA9;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -131,7 +131,7 @@ section {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #FF5733;
+        color: #358BA9;
     }
 }
 
@@ -140,7 +140,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../images/pidapalooza2018.png);
+    background-image: url(../images/PIDapalooza2019.png);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -194,9 +194,9 @@ header .header-content img {
 }
 
 .btn-primary {
-    border-color: #FF5733;
+    border-color: #358BA9;
     color: #fff;
-    background-color: #FF5733;
+    background-color: #358BA9;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -208,13 +208,13 @@ header .header-content img {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #FF5733;
+    border-color: #358BA9;
     color: #fff;
-    background-color: #FF5733;
+    background-color: #358BA9;
 }
 
 .btn-primary .badge {
-    color: #FF5733;
+    color: #358BA9;
     background-color: #fff;
 }
 
