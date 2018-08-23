@@ -2,6 +2,6 @@
 
 Just a basic landing page.
 
-<img src ="https://cdn.rawgit.com/pidapalooza/website/master/source/images/logo.svg" width="300px" alt="logo" />
+<img src ="https://pidapalooza.org/images/logo.svg" width="300px" alt="logo" />
 
 [PIDapalooza.org](http://pidapalooza.org)
