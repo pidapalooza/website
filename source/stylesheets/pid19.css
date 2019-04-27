@@ -140,7 +140,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../images/header2019.jpg);
+    background-image: url(../images/header2020.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -225,5 +225,3 @@ header .header-content img {
     font-weight: 700;
 	padding: 15px 30px;
 }
-
-
