@@ -1,6 +1,4 @@
-# PIDapalooza: conference website
-
-Just a basic landing page.
+# PIDapalooza conference website
 
 <img src ="https://pidapalooza.org/images/logo.svg" width="300px" alt="logo" />
 
